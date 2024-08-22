@@ -1,19 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinterio</title>
-</head>
-<body>
-    <header>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rinterio</title>
 
-    </header>
-    <main>
+        <!-- Google Font CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    </main>
-    <footer>
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/1bbfdb8083.js" crossorigin="anonymous"></script>
+
+        <!-- DaisyUI CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
         
-    </footer>
-</body>
+        <!-- Style -->
+        <style>
+            .font-manrope {
+                font-family: 'Manrope', sans-serif;
+            }
+        </style>
+
+        <!-- Custom Color -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                            'color-01': '#ABEF5F',
+                            'color-02': '#212121',
+                            'color-03': '#494949',
+                            'color-04': '#737373',
+                            'color-05': '#1C1C1C',
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body class="font-manrope">
+        <!-- Header Section -->
+        <header class="container mx-auto border-2 border-blue-500">
+            <div class="bg-base-200">
+                <!-- Nav Section -->
+                <nav class="w-11/12 mx-auto">
+                    <div class="navbar">
+                        <div class="navbar-start">
+                        <div class="flex gap-3 items-center">
+                            <div class="flex justify-center items-center rotate-45 bg-color-01 rounded-full w-8 h-8">
+                                <i class="fa-solid fa-arrow-up-long"></i>
+                            </div>
+                            <a class="text-2xl font-extrabold text-color-02">Rinterio</a>
+                        </div>
+                        </div>
+                        <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a class="text-color-03 text-sm font-extrabold">Home</a></li>
+                            <li><a class="text-color-04 text-sm font-normal">Services</a></li>
+                            <li><a class="text-color-04 text-sm font-normal">Portfolio</a></li>
+                            <li><a class="text-color-04 text-sm font-normal">Blogs</a></li>
+                            <li><a class="text-color-04 text-sm font-normal">Contact Us</a></li>
+                        </ul>
+                        </div>
+                        <div class="navbar-end">
+                            <div class="hidden md:flex md:justify-center md:items-center md:gap-3">
+                                <div class="h-8 w-8 rounded-full flex justify-center items-center bg-white">
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass text-color-04 fa-sm"></i></a>
+                                </div>
+                                <div class="h-8 w-8 rounded-full flex justify-center items-center bg-white">
+                                    <a href="#"><i class="fa-solid fa-cart-shopping text-color-04 fa-sm"></i></a>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="btn btn-sm bg-color-01 rounded-3xl text-color-05 text-xs font-extrabold">
+                                        Book Consult
+                                        <div class="flex justify-center items-center rotate-45 bg-color-05 rounded-full w-4 h-4 fa-xs">
+                                            <i class="fa-solid fa-arrow-up-long fa-xs text-white"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="dropdown dropdown-end">
+                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <div>
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                </div>
+                                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                    <li><a>Home</a></li>
+                                    <li><a>Services</a></li>
+                                    <li><a>Portfolio</a></li>
+                                    <li><a>Blogs</a></li>
+                                    <li><a>Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Banner Section -->
+                <section class="w-11/12 mx-auto text-center flex flex-col gap-5 justify-center items-center">
+                    <img src="assets/banner.png" alt="">
+                    <h1 class="text-5xl font-extrabold text-02 max-w-4xl">A barn house of this design has a striking appearance</h1>
+                    <p class="text-sm font-medium text-color-04 max-w-3xl">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                </section>
+            </div>
+        </header>
+        
+        <!-- Main Section -->
+        <main class="md:container mx-auto">
+
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+
+        </footer>
+    </body>
 </html>
