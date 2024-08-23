@@ -29,6 +29,9 @@
             tailwind.config = {
                 theme: {
                     extend: {
+                        backgroundImage: {
+                            'paper-pattern': "url('/assets/bg.jpg')",
+                        },
                         colors: {
                             clifford: '#da373d',
                             'color-01': '#ABEF5F',
@@ -41,10 +44,10 @@
                             'color-08': '#EFDA6E',
                             'color-09': '#A4DAC3',
                             'color-10': '#77AAEA',
-                        }
-                    }
-                }
-            }
+                        },
+                    },
+                },
+            };
         </script>
     </head>
     <body class="font-manrope">
@@ -238,6 +241,39 @@
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Next Project Section -->
+            <section>
+                <div class="bg-paper-pattern bg-cover bg-center flex items-center justify-center">
+                    <div class="w-11/12 mx-auto border-2 border-red-500 pb-20">
+                        <div class="flex flex-col justify-center items-center gap-5 border-2 border-red-500">
+                            <div class="badge badge-lg bg-color-06 gap-2">
+                                <i class="fa-solid fa-arrow-right-long fa-thin fa-heart text-xs"></i>
+                                Let’s Connect
+                            </div>
+                            <h2 class="text-3xl font-extrabold text-color-02 text-center">Let’s Discuss Next Project</h2>
+                            <p class="text-sm text-color-03 font-medium text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                            <div class="w-full md:w-5/6 lg:w-4/6 flex flex-col md:grid md:grid-cols-2 gap-5 border-2 border-red-500">
+                                <input type="text" placeholder="First Name*" class="input w-full max-w-full rounded-3xl p-2" />
+                                <input type="text" placeholder="Last Name*" class="input w-full max-w-full sm:max-w-xlg:max-w-lg rounded-3xl p-2" />
+                                <input type="text" placeholder="Phone Number*" class="input w-full max-w-full sm:max-w-xlg:max-w-lg rounded-3xl p-2" />
+                                <input type="text" placeholder="Email Number*" class="input w-full max-w-full sm:max-w-xlg:max-w-lg rounded-3xl p-2" />
+                                <textarea placeholder="Write your message here" class="input w-full h-44 rounded-3xl col-span-2 resize-none p-2"></textarea>
+                                <div class="col-span-2">
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-sm bg-color-01 rounded-3xl text-color-05 text-xs font-extrabold w-full">
+                                            Send Mail
+                                            <div class="flex justify-center items-center rotate-45 bg-color-05 rounded-full w-4 h-4 fa-xs">
+                                                <i class="fa-solid fa-arrow-up-long fa-xs text-white"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
