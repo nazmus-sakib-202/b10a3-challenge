@@ -131,20 +131,27 @@
             <!-- About Us Section -->
             <section>
                 <div class="bg-base-300">
-                    <div class="w-11/12 mx-auto border-2 border-red-500">
-                        <div class="grid grid-cols-1 md:grid-cols-2 py-16 gap-7 items-stretch">
-                            <div class="flex flex-col gap-5 items-center text-center md:items-start md:text-left md:justify-start justify-center">
-                                <div class="badge badge-lg gap-2">
+                    <div class="w-11/12 mx-auto border-2 border-red-500 lg:grid lg:grid-cols-2 lg:gap-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-5 lg:py-16 xl:py-24 gap-7 lg:col-span-1 xl:space-y-9">
+                            <!-- Text Container -->
+                            <div class="relative flex flex-col gap-5 items-center text-center md:col-span-2 lg:items-start lg:text-left">
+                                <div class="absolute -top-11 -left-6 hidden md:hidden lg:flex">
+                                    <img src="assets/Vector.png" alt="" class="w-2/3 h-1/3">
+                                </div>
+                                <div class="badge badge-lg gap-2 md:col-span-2">
                                     <i class="fa-solid fa-arrow-right-long fa-thin fa-heart text-xs"></i>
                                     About Us
                                 </div>
                                 <h2 class="text-3xl font-extrabold text-color-02">We design thoughtful, liveable spaces</h2>
                                 <p class="text-sm text-color-03 font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                            </div>
+                            <!-- Card Container -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:col-span-2 lg:flex lg:flex-col sm:gap-4 xl:space-y-9">
                                 <div class="card bg-base-100">
-                                    <div class="card-body">
-                                        <div class="flex gap-5 items-center">
+                                    <div class="card-body p-4">
+                                        <div class="flex gap-5 lg:items-center">
                                             <div class="flex-shrink-0">
-                                                <img class="w-16 h-16 object-cover" src="assets/commercial.png" alt="">
+                                                <img class="w-10 h-10 object-cover" src="assets/commercial.png" alt="">
                                             </div>
                                             <div class="flex flex-col gap-2">
                                                 <h2 class="card-title text-left">Commercial</h2>
@@ -154,10 +161,10 @@
                                     </div>
                                 </div>
                                 <div class="card bg-base-100">
-                                    <div class="card-body">
-                                        <div class="flex gap-5 items-center">
+                                    <div class="card-body p-4">
+                                        <div class="flex gap-5 lg:items-center">
                                             <div class="flex-shrink-0">
-                                                <img class="w-16 h-16 object-cover" src="assets/residential.png" alt="">
+                                                <img class="w-10 h-10 object-cover" src="assets/residential.png" alt="">
                                             </div>
                                             <div class="flex flex-col gap-2">
                                                 <h2 class="card-title text-left">Residential</h2>
@@ -167,9 +174,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex justify-center items-center">
-                                <img class="w-full object-cover" src="assets/Rectangle.png" alt="">
-                            </div>
+                        </div>
+                        <!-- Image Container -->
+                        <div class="card flex justify-center items-center overflow-hidden md:col-span-2 lg:col-span-1">
+                            <img class="w-full h-[220px] md:h-[380px] lg:h-auto object-cover" src="assets/Rectangle.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -246,7 +254,7 @@
                 </div>
             </section>
 
-            <!-- Latest Portfolio Section -->
+            <!-- Latest Portfolio Section 2 -->
             <section>
                 <div class="bg-white">
                     <div class="w-11/12 mx-auto border-2 border-red-500 pb-20">
@@ -255,20 +263,20 @@
                                 <i class="fa-solid fa-arrow-right-long fa-thin fa-heart text-xs"></i>
                                 Explore our Latest works
                             </div>
-                            <h2 class="text-3xl font-extrabold text-color-02 text-center">Our Latest Portfolio</h2>
+                            <h2 class="text-3xl font-extrabold text-color-02 text-center">Our Latest Portfolio 02</h2>
                             <p class="text-sm text-color-03 font-medium text-center mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                         </div>
-                        <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="grid sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-5">
                             <!-- Card 01 -->
-                            <div class="rounded-3xl md:col-span-2 lg:col-span-3 card lg:card-side bg-base-100 shadow-xl border-2 border-red-500">
-                                <figure class="relative w-full rounded-3xl overflow-hidden">
+                            <div class="p-5 gap-5 rounded-3xl md:col-span-8 card md:card-side bg-base-100 shadow-xl border-2 border-red-500">
+                                <figure class="relative w-full rounded-3xl overflow-hidden md:w-2/5">
                                 <img
                                     src="assets/img1.png"
-                                    alt="Album" class="w-full h-full object-cover p-5" />
+                                    alt="Album" class="w-full h-[180px] lg:h-[185px] object-cover" />
                                 </figure>
-                                <div class="card-body">
-                                <h2 class="card-title font-extrabold">Commercial</h2>
-                                <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                                <div class="md:w-3/5 my-auto">
+                                <h2 class="mb-3 card-title font-extrabold">Commercial</h2>
+                                <p class="mb-3">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                                 <div class="card-actions justify-start">
                                     <div class="flex gap-2">
                                         <button class="btn btn-sm bg-base-100 rounded-3xl text-color-05 text-lg font-extrabold border-none shadow-none pl-0">
@@ -282,39 +290,39 @@
                                 </div>
                             </div>
                             <!-- Card 02 -->
-                            <div class="card lg:card-side bg-base-100 shadow-xl border-2 border-red-500">
-                                <figure class="relative w-full rounded-3xl overflow-hidden">
+                            <div class="p-5 gap-5 rounded-3xl md:col-span-4 card md:card-side bg-base-100 shadow-xl border-2 border-red-500">
+                                <figure class="w-full rounded-3xl overflow-hidden">
                                 <img
                                     src="assets/img2.png"
-                                    alt="Album" class="w-full h-full object-cover p-5" />
+                                    alt="Album" class="w-full h-[180px] lg:h-[185px] object-cover" />
                                 </figure>
                             </div>
                             <!-- Card 03 -->
-                            <div class="lg:hidden card lg:card-side bg-base-100 shadow-xl border-2 border-red-500">
-                                <figure class="relative w-full rounded-3xl overflow-hidden">
+                            <div class="lg:hidden p-5 gap-5 rounded-3xl md:col-span-4 card md:card-side bg-base-100 shadow-xl border-2 border-red-500">
+                                <figure class="w-full rounded-3xl overflow-hidden">
                                 <img
                                     src="assets/img5.png"
-                                    alt="Album" class="w-full h-full object-cover p-5" />
+                                    alt="Album" class="w-full h-[180px] lg:h-[185px] object-cover" />
                                 </figure>
                             </div>
-                            <!-- Card 05 (a) -->
-                            <div class="hidden lg:flex card lg:card-side bg-base-100 shadow-xl border-2 border-red-500">
-                                <figure class="relative w-full rounded-3xl overflow-hidden">
+                            <!-- Card 03 (a) -->
+                            <div class="hidden lg:flex p-5 gap-5 rounded-3xl lg:col-span-3 card lg:card-side bg-base-100 shadow-xl border-2 border-red-500">
+                                <figure class="w-full rounded-3xl overflow-hidden">
                                 <img
                                     src="assets/img3.png"
-                                    alt="Album" class="w-full h-full object-cover p-5" />
+                                    alt="Album" class="w-full h-[180px] lg:h-[185px] object-cover" />
                                 </figure>
                             </div>
                             <!-- Card 04 -->
-                            <div class="rounded-3xl md:col-span-2 card lg:card-side bg-base-100 shadow-xl border-2 border-red-500">
-                                <figure class="relative w-full rounded-3xl overflow-hidden">
+                            <div class="p-5 gap-5 rounded-3xl md:col-span-8 lg:col-span-6 card md:card-side bg-base-100 shadow-xl border-2 border-red-500">
+                                <figure class="w-full rounded-3xl overflow-hidden md:w-2/5 lg:w-1/2">
                                 <img
                                     src="assets/img4.png"
-                                    alt="Album" class="w-full h-full object-cover p-5" />
+                                    alt="Album" class="w-full h-[180px] lg:h-[185px] object-cover" />
                                 </figure>
-                                <div class="card-body">
-                                <h2 class="card-title font-extrabold">Commercial</h2>
-                                <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                                <div class="md:w-3/5 lg:w-1/2 my-auto">
+                                <h2 class="mb-3 card-title font-extrabold">Commercial</h2>
+                                <p class="mb-3">The barn house captivates with its blend of rustic charm and modern.</p>
                                 <div class="card-actions justify-start">
                                     <div class="flex gap-2">
                                         <button class="btn btn-sm bg-base-100 rounded-3xl text-color-05 text-lg font-extrabold border-none shadow-none pl-0">
@@ -328,21 +336,19 @@
                                 </div>
                             </div>
                             <!-- Card 05 -->
-                            <div class="lg:hidden card lg:card-side bg-base-100 shadow-xl border-2 border-red-500">
-                                <figure class="relative w-full rounded-3xl overflow-hidden"
-                                >
+                            <div class="lg:hidden p-5 gap-5 rounded-3xl md:col-span-4 card md:card-side bg-base-100 shadow-xl border-2 border-red-500">
+                                <figure class="w-full rounded-3xl overflow-hidden">
                                 <img
                                     src="assets/img3.png"
-                                    alt="Album" class="w-full h-full object-cover p-5" />
+                                    alt="Album" class="w-full h-[180px] lg:h-[185px] object-cover" />
                                 </figure>
                             </div>
                             <!-- Card 06 -->
-                            <div class="card lg:card-side bg-base-100 shadow-xl border-2 border-red-500">
-                                <figure class="relative w-full rounded-3xl overflow-hidden"
-                                >
+                            <div class="p-5 gap-5 rounded-3xl md:col-span-4 lg:col-span-3 card md:card-side bg-base-100 shadow-xl border-2 border-red-500">
+                                <figure class="w-full rounded-3xl overflow-hidden">
                                 <img
                                     src="assets/img5.png"
-                                    alt="Album" class="w-full h-full object-cover p-5" />
+                                    alt="Album" class="w-full h-[180px] lg:h-[185px] object-cover" />
                                 </figure>
                             </div>
                         </div>
